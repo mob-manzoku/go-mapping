@@ -48,4 +48,8 @@ func TestMapping(t *testing.T) {
 		}
 	}
 
+	_, e := Mapping("aaaa", "uuuu")
+	if e == nil {
+		t.Fail()
+	}
 }
